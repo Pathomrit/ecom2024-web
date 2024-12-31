@@ -13,17 +13,17 @@ const PageProduct = () => {
     navigate(-1);
   };
   return (
-    <div className="flex gap-10">
+    <div className="flex mx-auto">
       {/* Left */}
-      <div>
+      <div className="flex items-center justify-center mx-auto">
         <img
           src={item.images[0].url}
           alt=""
-          className="min-h-screen w-4/4 mx-auto"
+          className="w-96 h-96 object-contain mx-auto"
         />
       </div>
       {/* Right */}
-      <div className="space-y-5">
+      <div className="space-y-5 w-3/5">
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl mt-16  font-semibold">{item.title}</h1>
           <p className="text-xl">
