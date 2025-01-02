@@ -41,7 +41,7 @@ const ProductCard = ({ item }) => {
           <div className="py-3">
             <p className="text-xl font-bold truncate">{item.title}</p>
             {item.description ? (
-              <p className="text-lg truncate">{item.description}</p>
+              <p className=" truncate ">{item.description}</p>
             ) : (
               <br />
             )}

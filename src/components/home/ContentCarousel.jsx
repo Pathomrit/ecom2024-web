@@ -44,16 +44,18 @@ const ContentCarousel = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          className="mySwiper"
+          className="mySwiper h-80"
         >
           {data?.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <img
-                  src={item.images[0].url}
-                  className="h-120 w-1/4 object-fit rounded-md mx-auto"
-                />
-                <p>{item.title}</p>
+                <div className="flex flex-col items-center gap-2">
+                  <img
+                    src={item.images[0].url}
+                    className="h-64 w-64 object-cover rounded-md mx-auto"
+                  />
+                  <p className="">{item.title}</p>
+                </div>
               </SwiperSlide>
             );
           })}

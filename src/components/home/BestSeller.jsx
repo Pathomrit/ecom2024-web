@@ -21,8 +21,10 @@ const BestSeller = () => {
   return (
     <SwiperShow>
       {data?.map((item, index) => (
-        <SwiperSlide key={index}>
-          <ProductCard item={item} />
+        <SwiperSlide key={index} className="flex justify-center items-center">
+          <div className="flex justify-center items-center">
+            <ProductCard item={item} className="w-full max-w-sm" />
+          </div>
         </SwiperSlide>
       ))}
     </SwiperShow>

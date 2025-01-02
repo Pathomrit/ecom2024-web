@@ -22,8 +22,10 @@ const NewProduct = () => {
     <SwiperShow className="flex gap-4 justify-center mx-auto w-full flex-wrap">
       {data?.map((item, index) => {
         return (
-          <SwiperSlide key={index}>
-            <ProductCard item={item} />
+          <SwiperSlide key={index} className="flex justify-center items-center">
+            <div className="flex justify-center items-center">
+              <ProductCard item={item} className="w-full max-w-sm" />
+            </div>
           </SwiperSlide>
         );
       })}

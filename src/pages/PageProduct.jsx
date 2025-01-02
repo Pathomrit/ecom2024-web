@@ -13,7 +13,7 @@ const PageProduct = () => {
     navigate(-1);
   };
   return (
-    <div className="flex mx-auto">
+    <div className="flex  flex-wrap mx-auto items-center justify-center mt-10">
       {/* Left */}
       <div className="flex items-center justify-center mx-auto">
         <img
@@ -23,7 +23,7 @@ const PageProduct = () => {
         />
       </div>
       {/* Right */}
-      <div className="space-y-5 w-3/5">
+      <div className="space-y-5 md:w-3/5">
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl mt-16  font-semibold">{item.title}</h1>
           <p className="text-xl">

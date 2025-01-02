@@ -29,11 +29,11 @@ const SwiperShow = ({ children }) => {
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 10,
         },
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 10,
         },
         1280: {
@@ -41,7 +41,7 @@ const SwiperShow = ({ children }) => {
           spaceBetween: 10,
         },
       }}
-      className="mySwiper object-cover rounded-md"
+      className="mySwiper object-cover rounded-md h-72"
     >
       {children}
     </Swiper>
