@@ -29,7 +29,13 @@ const PageProduct = () => {
           <p className="text-xl">
             {item.description === "" ? "No description" : item.description}
           </p>
-          <p className="text-xl">Price : {item.price} bath</p>
+          <p className="flex text-xl gap-2 items-end">
+            Price :
+            <span className="text-2xl font-bold text-red-500">
+              {item.price}
+            </span>
+            bath
+          </p>
           <p className="text-xl">
             Quantity :
             {item.quantity ? (
