@@ -13,19 +13,19 @@ const PageProduct = () => {
     navigate(-1);
   };
   return (
-    <div className="flex  flex-wrap mx-auto items-center justify-center mt-10">
+    <div className="flex  flex-wrap mx-auto justify-center mt-10 gap-10">
       {/* Left */}
-      <div className="flex items-center justify-center mx-auto">
+      <div className="flex items-center justify-center">
         <img
           src={item.images[0].url}
           alt=""
-          className="w-96 h-96 object-contain mx-auto"
+          className="w-96 h-96 object-contain"
         />
       </div>
       {/* Right */}
       <div className="space-y-5 md:w-3/5">
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl mt-16  font-semibold">{item.title}</h1>
+          <h1 className="text-2xl font-semibold">{item.title}</h1>
           <p className="text-xl">
             {item.description === "" ? "No description" : item.description}
           </p>
