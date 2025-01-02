@@ -19,7 +19,7 @@ const Shop = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[25%_auto_25%] lg:grid-cols-[25%_50%_25%]">
       {/* SearchBar */}
-      <div className="p-4 bg-gray-100 min-h-screen w-full mx-auto">
+      <div className="p-4 bg-gray-100 md:min-h-screen w-full mx-auto">
         <SearchCard />
       </div>
 
