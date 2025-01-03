@@ -34,7 +34,7 @@ const PageProduct = () => {
             <span className="text-2xl font-bold text-red-500">
               {item.price}
             </span>
-            bath
+            ฿
           </p>
           <p className="text-xl">
             Quantity :
