@@ -84,7 +84,7 @@ const MainNav = () => {
                   >
                     <p className="text-lg font-semibold">{user.email}</p>
                     <img
-                      src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
+                      src="https://cdn-icons-png.flaticon.com/512/6858/6858504.png"
                       className="w-10 h-10 rounded-full"
                       alt="avatar"
                     />
